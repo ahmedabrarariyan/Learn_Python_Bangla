@@ -23,4 +23,4 @@ print(name); print(age)
  
     #Program: ekadhik statement er shomonnoye kono ekta program toiri hoy
     #[amra ekek statement ekek line e likhte pari]
-    #[abar ek e line e semicolon diye ekadhik statement likha jay]
+    #[abar ek e line e ;(semi-colon) diye ekadhik statement likha jay]
