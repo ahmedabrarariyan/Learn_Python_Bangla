@@ -2,8 +2,8 @@
 
         #data types---      #python e jevabe likha lage---    #konta ki---
         #Text Type: 	    str                               string = str
-        #Numeric Types: 	int, float, complex               purno_shongkha = int, doshomik = float, jotil = complex
-        #Sequence Types: 	list, tuple, range                list = [], tuple = ()
+        #Numeric Types:     int, float, complex               purno_shongkha = int, doshomik = float, jotil = complex
+        #Sequence Types:    list, tuple, range                list = [], tuple = ()
         #Mapping Type: 	    dict                              dictionary = {key: value}
         #Set Types: 	    set, frozenset                    set = {}
         #Boolean Type: 	    bool                              True, False
@@ -33,10 +33,10 @@ print(isinstance(Feb, float)) #prints True
 
 #
 age = "16"
-print(isinstance(age, int)) #Prints False
+print(isinstance(age, int)) #prints False
 
 Age = int(age) #ekhane etake int bananor command dilam
-print(isinstance(Age, int)) #Prints True
+print(isinstance(Age, int)) #prints True
 
     #[kintu obosshoi, str er vitore kono shongkha na thakle, sheta ke int banano jabe na]
 name = "Nantu Ghotok"
