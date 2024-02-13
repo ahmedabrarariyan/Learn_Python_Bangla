@@ -67,50 +67,57 @@ print(a <= b) #true
 
 #
   ##Boolean / Logical operators
-    #and 	Returns True if both statements are true	x < 5 and; x < 10	
-    #or	Returns True if one of the statements is true	x < 5 or; x < 4	
-    #not	Reverse the result, returns False if the result is true;	not(x < 5 and x < 10)
+    #and: jodi 2 ta statement e True hoy, tahole True bolbe.	x < 5 and; x < 10	
+    #or: 2 tar moddhe jekono 1 ta True holei, True bolbe.	x < 5 or; x < 4	
+    #not:	True ke False aar False ke True bole.	not(x < 5 and x < 10)
+      #[orthat uttor True hole oitake False bolbe]
+
+    #Example:
 condition1 = True
 condition2 = False
 
-print(not(condition1)) #False; just reversed the original
-print(condition1 and condition2) #False; both must be true
-print(condition1 or condition2) #True; at least one is true
-      
-      #magic of OR operator (searches for true)
-        #if the First of 2 values is True, it will return the First value
-        #if the First of 2 values is False, it will return the Second value
-        #true values: True, 1, 'abc', ' ', [1,2,3], {1,2,3}, (1,2,3)
-        #false values: False, 0, '', [], {}, (), None
+print(not(condition1)) #False; True ke False banay dilo
+print(condition1 and condition2) #False; 2 te kei True houa lagbe
+print(condition1 or condition2) #True; ontoto 1 ta True houa lagbe
 
-print(0 or 1) #1 (here, the first value is false)
-print(False or 'hey') #'hey' (here, the first value is false)
-print('hi' or 'hey') #'hi' (here, the first value is true)
-print([] or False) #'False' (here, the first value is false) (both are false btw)
-print(False or []) #'[]' (here, the first value is false) (both are false btw)
+#      
+  ##OR operator er jadu (searches for true)
+    #2 ta value er moddhe 1st ta jodi True hoy, tahole 1st ta e dibe. 2nd tay jabe na
+    #2 tar moddhe 1st value ta False hole, 2nd value te jabe, aar 2nd ta e dibe
+      #[2nd value ta False holeo, 2nd ta dibe, jodi 1st value False hoy]
+    #True values: True, 1, 'abc', ' ', [1,2,3], {1,2,3}, (1,2,3)
+    #False values: False, 0, '', [], {}, (), None
+      #[orthat, data faka thakle ba 0 hole, oita False]
 
-      #magic of AND operator (searches for false)
-        #if the First of 2 values is True, only then it will return the Second value
-        #if the First of 2 values is False, it will return the First value
+print(0 or 1) #1; (ekhane 1st value False, tai 2nd value ashche)
+print(False or 'hey') #hey; (ekhane 1st value False, tai 2nd value ashche)
+print('hi' or 'hey') #hi; (ekhane 1st value tai True, tai 1st value ashche)
+print([] or False) #False; (ekhane 1st value False, tai 2nd value ashche) (ekhane kintu 2 tai False)
+print(False or []) #[]; (ekhane 1st value False, tai 2nd value ashche) (ekhane kintu 2 tai False)
 
-print(0 and 1) #0 (here, the first value is false)
-print(1 and 0) #0 (here, the first value is true)
-print(False and 'hey') #'False' (here, the first value is false)
-print('hi' and 'hey') #'hey' (here, the first value is true)
-print([] and False) #'[]' (here, the first value is false) (both are false btw)
-print(False and []) #'False' (here, the first value is false) (both are false btw)
+#
+  ##AND operator er jadu (searches for false)
+    #1st value True hole, kebol tokhon e 2nd value te jabe ebong 2nd value dibe
+    #1st value False hole, kebol tokhon e 1st value dibe
 
+print(0 and 1) #0 (1st value False, tai 1st tai ashche)
+print(1 and 0) #0 (1st value True, tai 2nd value ashche)
+print(False and 'hey') #'False' (1st value False, tai 1st tai ashche)
+print('hi' and 'hey') #'hey' (1st value True, tai 2nd value ashche)
+print([] and False) #'[]' (1st value True, tai 2nd value ashche) (ekhane kintu 2 tai False)
+print(False and []) #'False' (1st value True, tai 2nd value ashche) (ekhane kintu 2 tai False)
 
-    #Bitwise operators (very rarely used) (only for binary)
-          #Name   Work                                              Examples
-      #& 	AND	    Sets each bit to 1 if both bits are 1	            x & y	
-      #|	OR	    Sets each bit to 1 if one of two bits is 1	      x | y	
-      #^	XOR	    Sets each bit to 1 if only one of two bits is 1	  x ^ y	
-      #~	NOT	    Inverts all the bits	                            ~x	
-      #<<	Shift left operation;	  Shift left by pushing zeros in from the right
-        #and let the leftmost bits fall off	                        x << 2	
-      #>>	Shift right operation;	    Shift right by pushing copies of the leftmost bit in
-        #from the left, and let the rightmost bits fall off	        x >> 2
+#
+  ##Bitwise operators (very rarely used) (only for binary)
+        #Name   Work                                              Examples
+    #& 	AND	    Sets each bit to 1 if both bits are 1	            x & y	
+    #|	OR	    Sets each bit to 1 if one of two bits is 1	      x | y	
+    #^	XOR	    Sets each bit to 1 if only one of two bits is 1	  x ^ y	
+    #~	NOT	    Inverts all the bits	                            ~x	
+    #<<	Shift left operation;	  Shift left by pushing zeros in from the right
+      #and let the leftmost bits fall off	                        x << 2	
+    #>>	Shift right operation;	    Shift right by pushing copies of the leftmost bit in
+      #from the left, and let the rightmost bits fall off	        x >> 2
 
     #Identity operators
       #is;	Returns True if both variables are the same object;	x is y
