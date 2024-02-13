@@ -104,8 +104,8 @@ print(0 and 1) #0 (1st value False, tai 1st tai ashche)
 print(1 and 0) #0 (1st value True, tai 2nd value ashche)
 print(False and 'hey') #'False' (1st value False, tai 1st tai ashche)
 print('hi' and 'hey') #'hey' (1st value True, tai 2nd value ashche)
-print([] and False) #'[]' (1st value True, tai 2nd value ashche) (ekhane kintu 2 tai False)
-print(False and []) #'False' (1st value True, tai 2nd value ashche) (ekhane kintu 2 tai False)
+print([] and False) #'[]' (1st value False, tai 1st value ashche) (ekhane kintu 2 tai False)
+print(False and []) #'False' (1st value False, tai 1st value ashche) (ekhane kintu 2 tai False)
 
 #
   ##Bitwise operators (very rarely used) (only for binary)
