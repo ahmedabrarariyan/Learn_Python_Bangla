@@ -47,12 +47,12 @@ print(b // a) #2 (floor division)
 
 #    
   ##Comparison operators
-    #==	Equal	x == y                      (shoman)
-    #!=	Not equal	x != y                  (shoman noy)
-    #>	Greater than	x > y               (baam er ta boro)
-    #<	Less than	x < y                   (baam er ta choto)
-    #>=	Greater than or equal to	x >= y  (baam er ta boro othoba shoman)
-    #<=	Less than or equal to	x <= y      (baam er ta choto othoba shoman)
+    #==	Equal [x == y]                      (shoman)
+    #!=	Not equal [x != y]                  (shoman noy)
+    #>	Greater than [x > y]                (baam er ta boro)
+    #<	Less than [x < y]                   (baam er ta choto)
+    #>=	Greater than or equal to [x >= y]   (baam er ta boro othoba shoman)
+    #<=	Less than or equal to [x <= y]      (baam er ta choto othoba shoman)
 
     #Examples:
 
@@ -67,9 +67,9 @@ print(a <= b) #true
 
 #
   ##Boolean / Logical operators
-    #and: jodi 2 ta statement e True hoy, tahole True bolbe.	x < 5 and; x < 10	
-    #or: 2 tar moddhe jekono 1 ta True holei, True bolbe.	x < 5 or; x < 4	
-    #not:	True ke False aar False ke True bole.	not(x < 5 and x < 10)
+    #and: jodi 2 ta statement e True hoy, tahole True bolbe; x < 5 and; x < 10	
+    #or: 2 tar moddhe jekono 1 ta True holei, True bolbe; x < 5 or; x < 4	
+    #not: True ke False aar False ke True bole; not(x < 5 and x < 10)
       #[orthat uttor True hole oitake False bolbe]
 
     #Example:
@@ -112,8 +112,8 @@ print(False and []) #'False' (1st value False, tai 1st value ashche) (ekhane kin
         #Name   Work                                                  Examples
     #& 	AND	    2 ta bit e 1 hole, prottek bit ke 1 bole              x & y	
     #|	OR	    2 tar 1ta bit 1 holei, prottek bit ke 1 bole          x | y	
-    #^	XOR	    prottek bit ke 1 bolbe, kebol jodi 1ta bit e 1 hoy	  x ^ y	
-    #~	NOT	    shob bit ke ultay fele (inverse)                       ~x	
+    #^	XOR	    prottek bit ke 1 bolbe, kebol jodi 1ta bit e 1 hoy    x ^ y	
+    #~	NOT	    shob bit ke ultay fele (inverse)                        ~x	
 
     #<<	Shift left operation;                                         x << 2
       #[dan pashe ekadhik 0 ene bam pasher bit guloke fele deya]
@@ -122,13 +122,13 @@ print(False and []) #'False' (1st value False, tai 1st value ashche) (ekhane kin
 
 #
   ##Identity operators
-      #is;	2ta object ek e hole, True bolbe;	x is y
-      #is not;	2ta object vinno hole True bolbe; x is not y
+      #is; 2ta object ek e hole, True bolbe; x is y
+      #is not; 2ta object vinno hole True bolbe; x is not y
 
 #
   ##Membership operators
-      #in;	Jodi kono nirdishto value onno kono sequence ba list e thake, tahole True;	x in y
-      #not in;	Jodi kono nirdishto value onno sequence ba list e Na thake, tahole True; x not in y
+      #in; Jodi kono nirdishto value onno kono sequence ba list e thake, tahole True; x in y
+      #not in; Jodi kono nirdishto value onno sequence ba list e Na thake, tahole True; x not in y
 
 #
   ##Ternarry operator (if-else statement er shortcut)
