@@ -108,26 +108,30 @@ print([] and False) #'[]' (1st value False, tai 1st value ashche) (ekhane kintu 
 print(False and []) #'False' (1st value False, tai 1st value ashche) (ekhane kintu 2 tai False)
 
 #
-  ##Bitwise operators (very rarely used) (only for binary)
-        #Name   Work                                              Examples
-    #& 	AND	    Sets each bit to 1 if both bits are 1	            x & y	
-    #|	OR	    Sets each bit to 1 if one of two bits is 1	      x | y	
-    #^	XOR	    Sets each bit to 1 if only one of two bits is 1	  x ^ y	
-    #~	NOT	    Inverts all the bits	                            ~x	
-    #<<	Shift left operation;	  Shift left by pushing zeros in from the right
-      #and let the leftmost bits fall off	                        x << 2	
-    #>>	Shift right operation;	    Shift right by pushing copies of the leftmost bit in
-      #from the left, and let the rightmost bits fall off	        x >> 2
+  ##Bitwise operators (khub ekta bebohar hoy na)
+        #Name   Work                                                  Examples
+    #& 	AND	    2 ta bit e 1 hole, prottek bit ke 1 bole              x & y	
+    #|	OR	    2 tar 1ta bit 1 holei, prottek bit ke 1 bole          x | y	
+    #^	XOR	    prottek bit ke 1 bolbe, kebol jodi 1ta bit e 1 hoy	  x ^ y	
+    #~	NOT	    shob bit ke ultay fele (inverse)                       ~x	
 
-    #Identity operators
-      #is;	Returns True if both variables are the same object;	x is y
-      #is not;	Returns True if both variables are not the same object; x is not y
+    #<<	Shift left operation;                                         x << 2
+      #[dan pashe ekadhik 0 ene bam pasher bit guloke fele deya]
+    #>>	Shift right operation;                                        x >> 2
+      #[shobcheye baam pasher bit copy kore ene bam pashe boshiye, dan pasher bit guloke fele deya]
 
-    #Membership operators
-      #in;	Returns True if a certain value is present in another list or sequence;	x in y
-      #not in;	Returns True if a certain value is not present in another list or sequence; x not in y
+#
+  ##Identity operators
+      #is;	2ta object ek e hole, True bolbe;	x is y
+      #is not;	2ta object vinno hole True bolbe; x is not y
 
-    #Ternarry operator (shortcut of if-else statement)
+#
+  ##Membership operators
+      #in;	Jodi kono nirdishto value onno kono sequence ba list e thake, tahole True;	x in y
+      #not in;	Jodi kono nirdishto value onno sequence ba list e Na thake, tahole True; x not in y
+
+#
+  ##Ternarry operator (if-else statement er shortcut)
 def is_adult(age):
   if age > 18:
     return True
