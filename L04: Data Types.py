@@ -1,4 +1,4 @@
-#Lesson 5: Data Types
+#Lesson 4: Data Types
 
         #data types---      #python e jevabe likha lage---    #konta ki---
         #Text Type: 	    str                               string = str
