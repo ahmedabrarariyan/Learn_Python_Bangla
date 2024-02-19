@@ -1,4 +1,4 @@
-#Lesson 6: Operators
+#Lesson 5: Operators
 
   #Python e prodhanoto 7 dhoroner Operator ache---
     #1. Arithmetic Operators
