@@ -30,133 +30,142 @@ khay.""")
 print("Goru\nGhash\nKhay") #notun line er jonne \n
 
     #String Methods
-print("ahmed".upper()) #AHMED #turns everything to capital
-print("ahMED".lower()) #ahmed #turns everything to small
-print("ahmed abrar".title()) #Ahmed Abrar #turns first letter of each word to capital
+    #Examples:
+print("ahmed".upper()) #AHMED #shobkichuke capital kore
+print("ahMED".lower()) #ahmed #shobkichuke small kore
+print("ahmed abrar".title()) #Ahmed Abrar #Prottek shobder prothom word ke capital kore
 
-print("ahMEd".islower()) #False #checks if all letters are small
-print("Ahmed".isupper()) #False #checks if all letters are capital
-print("Ahmed Abrar".istitle()) #True
+print("ahMEd".islower()) #False #shob letter small ki na, check kore
+print("Ahmed".isupper()) #False #shob letter capital ki na, check kore
+print("Ahmed Abrar".istitle()) #True #shob word er 1st letter capital ki na, check kore
 
-    #Various String Methods:
+    #string method gular ekta purno list niche jukto kora hoyeche
 
-      #
-      #capitalize()	Converts the Only The First character to upper case
+    #Escaping in strings
+    #[backslash(\) bebohar kore amra emon kichuke output e ante pari, ja emnite onno kaje bebohar hoy]
+    #quote(") bebohar kore string shuru aar shesh hoy, tai etake amra emnite output e dekhi na
+    #jodi etake output e show korte chai, tahole etar aage \ bebohar korte hobe.
+
+print("Keu \"Thamate \"Parbe \"Na.") #Keu "Thamate "Parbe "Na)
+
+    #ekhon, jodi amra backslash(\) ke show korte chai, taile dite hobe \\
+print("Keu \\ Thamate \\ Parbe \\ Na.") #Keu \ Thamate \ Parbe \ Na.
+
+    #Coding e 0 theke gonona shuru hoy aar 0 ke negative dhora hoy na.
+    #string er por squared brackets[] er moddhe number boshiye oi index er character pawa jay
+print("chocolat"[0]) #c; 1st index e c chilo
+print("custurd"[1]) #u; 2nd index e u chilo
+print("bachur"[-1]) #r; last index e r chilo
+
+    #Slicing a string
+    #[a:b] diye slice korle, amake a theke b-1 porjonto index er character dekhabe
+print("Doodh"[1:3]) #ekhane 1(2nd index) e o, 3(4th index) e d. tai result oo
+        #3-1(3rd index) er character o
+print("Oh accha tai naki"[1:7]) #ekhane 1(2nd index) e h, 7(8th index) e a. result- h acch
+        #7-1(7th index) er character h
+
+
+    #Bivinno String Methods:
+
+      #capitalize(); string er 1st character ke capitalize kore
 print("ahmed abrar".capitalize()) #Ahmed abrar
 
-      #casefold()	Converts the whole string into lower case
+      #casefold(); puro string er shob character ke small kore
 print("AHmed AbRAR".casefold()) #ahmed abrar
-      #lower()	Converts a string into lower case. Similar to casefold()
+      #lower(); puro string er shob character ke small kore. casefold() aar eta same
 
-      #center()	Returns a centered string
-        #The center() method will center align the string,
-        #using a specified character (space is default) as the fill character.
-print(name.center(100)) #this is use 100 pixels of space for each side.
-print(name.center(50, "O")) #prothome length of padding, tarpore character of padding
-        #also, length beshi choto hole, character ta show kore na.
+      #center(); kendre obosthito string dekhabe
+        #string ke kendre sthaponer jonne duipashe onno character boshabe
+        #by default, space diye duipash purno korbe
+        #othoba amra chaile kono nirdishto character diye oi jayga purno korte parbo
+print(name.center(100)) #prottek pashe 100 pixel space dibe.
+print(name.center(50, "O")) #ekhane O diye prottek pashe 50 pixel kore purno korbe
+        #prothome length of padding, tarpore character of padding
+        #[length beshi choto hole, character ta show kore na]
 
-      #count()	Returns the number of times a specified value occurs in a string
+      #count(); ekta nirdishto value kotobar ekta string e ache, sheita bole
 print("Joy Bangla".count("g")) #1
 print("Joy Bangla".count("Bang")) #1
 
-      #encode()	Returns an encoded version of the string
+      #encode(); Returns an encoded version of the string
 print("Valobasha".encode()) #b'Valobasha' (wtf is encoded? b er abar kaj ki?)
 
-      #endswith()	Returns true if the string ends with the specified value
+      #endswith(); Amra jei value dilam, ta diye oi string ta shesh hoy na, sheta check kore
 print("Jhaira Lok".endswith("k")) #True
 print("Jhaira Lok".endswith("Lok")) #True
 
-      #expandtabs()	Sets the tab size of the string
+      #expandtabs(); Sets the tab size of the string
 
-      #find()	Searches the string for a specified value and returns the position of where it was found
+      #find(); Searches the string for a specified value and returns the position of where it was found
         
-      #format()	Formats specified values in a string
+      #format(); Formats specified values in a string
 
-      #format_map()	Formats specified values in a string
+      #format_map(); Formats specified values in a string
 
-      #index()	Searches the string for a specified value and returns the position of where it was found
+      #index(); Searches the string for a specified value and returns the position of where it was found
         
-      #isalnum()	Returns True if all characters in the string are alphanumeric
+      #isalnum(); Returns True if all characters in the string are alphanumeric
 
-      #isalpha()	Returns True if all characters in the string are in the alphabet
+      #isalpha(); Returns True if all characters in the string are in the alphabet
 
-      #isascii()	Returns True if all characters in the string are ascii characters
+      #isascii(); Returns True if all characters in the string are ascii characters
 
-      #isdecimal()	Returns True if all characters in the string are decimals
+      #isdecimal(); Returns True if all characters in the string are decimals
 
-      #isdigit()	Returns True if all characters in the string are digits
+      #isdigit(); Returns True if all characters in the string are digits
 
-      #isidentifier()	Returns True if the string is an identifier
+      #isidentifier(); Returns True if the string is an identifier
 
-      #islower()	Returns True if all characters in the string are lower case
+      #islower(); Returns True if all characters in the string are lower case
 
-      #isnumeric()	Returns True if all characters in the string are numeric
+      #isnumeric(); Returns True if all characters in the string are numeric
 
-      #isprintable()	Returns True if all characters in the string are printable
+      #isprintable(); Returns True if all characters in the string are printable
 
-      #isspace()	Returns True if all characters in the string are whitespaces
+      #isspace(); Returns True if all characters in the string are whitespaces
 
-      #istitle()	Returns True if the string follows the rules of a title
+      #istitle(); Returns True if the string follows the rules of a title
 
-      #isupper()	Returns True if all characters in the string are upper case
+      #isupper(); Returns True if all characters in the string are upper case
 
-      #join()	Converts the elements of an iterable into a string
+      #join(); Converts the elements of an iterable into a string
 
-      #ljust()	Returns a left justified version of the string
+      #ljust(); Returns a left justified version of the string
 
+      #lstrip(); Returns a left trim version of the string
 
+      #maketrans(); Returns a translation table to be used in translations
 
-      #lstrip()	Returns a left trim version of the string
+      #partition(); Returns a tuple where the string is parted into three parts
 
-      #maketrans()	Returns a translation table to be used in translations
+      #replace(); Returns a string where a specified value is replaced with a specified value
 
-      #partition()	Returns a tuple where the string is parted into three parts
-
-      #replace()	Returns a string where a specified value is replaced with a specified value
-
-      #rfind()	Searches the string for a specified value and returns the last position of where it was found
+      #rfind(); Searches the string for a specified value and returns the last position of where it was found
         
-      #rindex()	Searches the string for a specified value and returns the last position of where it was found
+      #rindex(); Searches the string for a specified value and returns the last position of where it was found
         
-      #rjust()	Returns a right justified version of the string
+      #rjust(); Returns a right justified version of the string
         
-      #rpartition()	Returns a tuple where the string is parted into three parts
+      #rpartition(); Returns a tuple where the string is parted into three parts
         
-      #rsplit()	Splits the string at the specified separator, and returns a list
+      #rsplit(); Splits the string at the specified separator, and returns a list
         
-      #rstrip()	Returns a right trim version of the string
+      #rstrip(); Returns a right trim version of the string
         
-      #split()	Splits the string at the specified separator, and returns a list
+      #split(); Splits the string at the specified separator, and returns a list
         
-      #splitlines()	Splits the string at line breaks and returns a list
+      #splitlines(); Splits the string at line breaks and returns a list
 
-      #startswith()	Returns true if the string starts with the specified value
+      #startswith(); Returns true if the string starts with the specified value
 
-      #strip()	Returns a trimmed version of the string
+      #strip(); Returns a trimmed version of the string
 
-      #swapcase()	Swaps cases, lower case becomes upper case and vice versa
+      #swapcase(); Swaps cases, lower case becomes upper case and vice versa
 
-      #title()	Converts the first character of each word to upper case
+      #title(); Converts the first character of each word to upper case
 
-      #translate()	Returns a translated string
+      #translate(); Returns a translated string
 
-      #upper()	Converts a string into upper case
+      #upper(); Converts a string into upper case
 
-      #zfill()	Fills the string with a specified number of 0 values at the beginning
-
-  #Escaping in strings
-    #We can use \ to use something in a string that's usually used for something else.
-print("Keu \"Thamate \"Parbe \"Na.") #Keu "Thamate "Parbe "Na)
-    #Now, to use a backslash in a string, we have to use \\
-print("Keu \\ Thamate \\ Parbe \\ Na.") #Keu \ Thamate \ Parbe \ Na.
-
-  #In coding, counting starts from 0. And 0 is not considered negative.
-  #We can use squared brackets after string to get a character at a specific index.
-print("chocolat"[0]) #c
-print("custurd"[1]) #u
-print("bachur"[-1]) #r
-
-  #Slicing a string
-  #if I input [a:b], then it show only the part of the string from a to b-1.
-print("Doodh"[1:3]) #ekhane 1 tomo digit o, 3 tomo digit d. tai oo result
-print("Oh accha tai naki"[1:7]) #ekhane 1 tomo digit h, 7 tomo digit a. result- h acch
+      #zfill(); Fills the string with a specified number of 0 values at the beginning
