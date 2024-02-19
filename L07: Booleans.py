@@ -1,4 +1,4 @@
-#Lesson 8: Booleans
+#Lesson 7: Booleans
 
     #[Boolean holo ekta data type jar shudhu duita value e thakte pare: True, False]
     #True aar False case sensitive. 1st letter capital hotei hobe
