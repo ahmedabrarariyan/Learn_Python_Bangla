@@ -1,4 +1,4 @@
-#Lesson 7: Strings
+#Lesson 6: Strings
 
     #[""(quotation mark) er moddhe aboddho kichu character]
     #single quote('') ba double quote("") duivabei shuddho, jotokkhon duipashe ek e rokom thake
